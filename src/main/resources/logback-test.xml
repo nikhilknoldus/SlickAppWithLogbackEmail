@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+
+	<appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+		<encoder>
+			<pattern>%highlight([%level]) - [%date] - [%thread] - [%logger]
+				%msg%n</pattern>
+		</encoder>
+	</appender>
+	<appender name="EMAIL" class="ch.qos.logback.classic.net.SMTPAppender">
+		<smtpHost>smtp.gmail.com</smtpHost>
+		<smtpPort>587</smtpPort>
+		<STARTTLS>true</STARTTLS>
+		<username>enter-your-emailid</username>
+		<password>enter-your-passwor</password>
+		<asynchronousSending>false</asynchronousSending>
+		<to>enter-email-to-whom-you-are-sending</to>
+		<from>from-email</from>
+		<subject>ERROR: %logger{20} - %m</subject>
+		<layout class="ch.qos.logback.classic.PatternLayout">
+			<pattern>%date %-5level %logger - %message%n</pattern>
+		</layout>
+	</appender>
+	<root level="error">
+		<appender-ref ref="EMAIL" />
+	</root>
+</configuration> 

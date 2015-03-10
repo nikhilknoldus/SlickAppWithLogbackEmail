@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="ivy-report.xsl"?>
+<ivy-report version="1.0">
+	<info
+		organisation="default"
+		module="slickapp_2.11"
+		revision="1.0"
+		conf="runtime"
+		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool"
+		date="20150309233705"/>
+	<dependencies>
+		<module organisation="javax.mail" name="mail">
+			<revision name="1.4.5" status="release" pubdate="20120324033414" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="12">
+				<metadata-artifact status="no" details="" size="6883" time="0" location="/home/knoldus/.ivy2/cache/javax.mail/mail/ivy-1.4.5.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/javax/mail/mail/1.4.5/mail-1.4.5.pom"/>
+				<caller organisation="default" name="slickapp_2.11" conf="compile, runtime" rev="1.4.5" rev-constraint-default="1.4.5" rev-constraint-dynamic="1.4.5" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="mail" type="jar" ext="jar" status="no" details="" size="508143" time="0" location="/home/knoldus/.ivy2/cache/javax.mail/mail/jars/mail-1.4.5.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/javax/mail/mail/1.4.5/mail-1.4.5.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="javax.activation" name="activation">
+			<revision name="1.1" status="release" pubdate="20060503051829" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://java.sun.com/products/javabeans/jaf/index.jsp" downloaded="false" searched="false" default="false" conf="compile, runtime, compile(*), runtime(*), master(compile), master" position="13">
+				<license name="Common Development and Distribution License (CDDL) v1.0" url="https://glassfish.dev.java.net/public/CDDLv1.0.html"/>
+				<metadata-artifact status="no" details="" size="2718" time="0" location="/home/knoldus/.ivy2/cache/javax.activation/activation/ivy-1.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/javax/activation/activation/1.1/activation-1.1.pom"/>
+				<caller organisation="javax.mail" name="mail" conf="default, compile, runtime, master" rev="1.1" rev-constraint-default="1.1" rev-constraint-dynamic="1.1" callerrev="1.4.5"/>
+				<artifacts>
+					<artifact name="activation" type="jar" ext="jar" status="no" details="" size="62983" time="0" location="/home/knoldus/.ivy2/cache/javax.activation/activation/jars/activation-1.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/javax/activation/activation/1.1/activation-1.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.postgresql" name="postgresql">
+			<revision name="9.4-1200-jdbc41" status="release" pubdate="20150203003802" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://jdbc.postgresql.org" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="6">
+				<license name="The PostgreSQL License" url="http://www.postgresql.org/about/licence/"/>
+				<metadata-artifact status="no" details="" size="3554" time="0" location="/home/knoldus/.ivy2/cache/org.postgresql/postgresql/ivy-9.4-1200-jdbc41.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/postgresql/postgresql/9.4-1200-jdbc41/postgresql-9.4-1200-jdbc41.pom"/>
+				<caller organisation="default" name="slickapp_2.11" conf="compile, runtime" rev="9.4-1200-jdbc41" rev-constraint-default="9.4-1200-jdbc41" rev-constraint-dynamic="9.4-1200-jdbc41" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="postgresql" type="jar" ext="jar" status="no" details="" size="648508" time="0" location="/home/knoldus/.ivy2/cache/org.postgresql/postgresql/jars/postgresql-9.4-1200-jdbc41.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/postgresql/postgresql/9.4-1200-jdbc41/postgresql-9.4-1200-jdbc41.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.github.dblock.waffle" name="waffle-jna">
+			<revision name="1.7" status="release" pubdate="20140926073847" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime, compile(*), runtime(*), master(compile), master" position="7">
+				<metadata-artifact status="no" details="" size="7124" time="0" location="/home/knoldus/.ivy2/cache/com.github.dblock.waffle/waffle-jna/ivy-1.7.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/github/dblock/waffle/waffle-jna/1.7/waffle-jna-1.7.pom"/>
+				<caller organisation="org.postgresql" name="postgresql" conf="default, compile, runtime, master" rev="1.7" rev-constraint-default="1.7" rev-constraint-dynamic="1.7" callerrev="9.4-1200-jdbc41"/>
+				<artifacts>
+					<artifact name="waffle-jna" type="jar" ext="jar" status="no" details="" size="61182" time="0" location="/home/knoldus/.ivy2/cache/com.github.dblock.waffle/waffle-jna/jars/waffle-jna-1.7.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/github/dblock/waffle/waffle-jna/1.7/waffle-jna-1.7.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.slf4j" name="slf4j-simple">
+			<revision name="1.7.7" status="release" pubdate="20140404164257" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.slf4j.org" downloaded="false" searched="false" default="false" conf="compile, runtime, compile(*), runtime(*), master(compile), master" position="10">
+				<metadata-artifact status="no" details="" size="4605" time="0" location="/home/knoldus/.ivy2/cache/org.slf4j/slf4j-simple/ivy-1.7.7.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/slf4j/slf4j-simple/1.7.7/slf4j-simple-1.7.7.pom"/>
+				<caller organisation="org.postgresql" name="postgresql" conf="default, compile, runtime, master" rev="1.7.7" rev-constraint-default="1.7.7" rev-constraint-dynamic="1.7.7" callerrev="9.4-1200-jdbc41"/>
+				<artifacts>
+					<artifact name="slf4j-simple" type="jar" ext="jar" status="no" details="" size="10683" time="0" location="/home/knoldus/.ivy2/cache/org.slf4j/slf4j-simple/jars/slf4j-simple-1.7.7.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/slf4j/slf4j-simple/1.7.7/slf4j-simple-1.7.7.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.slf4j" name="slf4j-api">
+			<revision name="1.7.7" status="release" pubdate="20140404164248" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.slf4j.org" downloaded="false" searched="false" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master, master(compile)" position="11">
+				<metadata-artifact status="no" details="" size="4567" time="0" location="/home/knoldus/.ivy2/cache/org.slf4j/slf4j-api/ivy-1.7.7.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/slf4j/slf4j-api/1.7.7/slf4j-api-1.7.7.pom"/>
+				<caller organisation="com.typesafe.slick" name="slick_2.11" conf="default, compile, runtime, master" rev="1.6.4" rev-constraint-default="1.6.4" rev-constraint-dynamic="1.6.4" callerrev="2.1.0"/>
+				<caller organisation="ch.qos.logback" name="logback-classic" conf="default, compile, runtime, master" rev="1.7.5" rev-constraint-default="1.7.5" rev-constraint-dynamic="1.7.5" callerrev="1.0.13"/>
+				<caller organisation="org.slf4j" name="slf4j-simple" conf="compile, runtime" rev="1.7.7" rev-constraint-default="1.7.7" rev-constraint-dynamic="1.7.7" callerrev="1.7.7"/>
+				<artifacts>
+					<artifact name="slf4j-api" type="jar" ext="jar" status="no" details="" size="29257" time="0" location="/home/knoldus/.ivy2/cache/org.slf4j/slf4j-api/jars/slf4j-api-1.7.7.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/slf4j/slf4j-api/1.7.7/slf4j-api-1.7.7.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+			<revision name="1.7.5" status="release" pubdate="20130326022215" resolver="sbt-chain" artresolver="sbt-chain" evicted="latest-revision" evicted-reason="" homepage="http://www.slf4j.org" downloaded="false" searched="false" default="false" conf="compile, runtime, compile(*), runtime(*), master(compile), master" position="-1">
+				<metadata-artifact status="no" details="" size="4475" time="0" location="/home/knoldus/.ivy2/cache/org.slf4j/slf4j-api/ivy-1.7.5.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/slf4j/slf4j-api/1.7.5/slf4j-api-1.7.5.pom"/>
+				<evicted-by rev="1.7.7"/>
+				<caller organisation="com.typesafe.slick" name="slick_2.11" conf="default, compile, runtime, master" rev="1.6.4" rev-constraint-default="1.6.4" rev-constraint-dynamic="1.6.4" callerrev="2.1.0"/>
+				<caller organisation="ch.qos.logback" name="logback-classic" conf="default, compile, runtime, master" rev="1.7.5" rev-constraint-default="1.7.5" rev-constraint-dynamic="1.7.5" callerrev="1.0.13"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+			<revision name="1.6.4" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="compile, runtime, compile(*), runtime(*), master(compile), master" position="-1">
+				<evicted-by rev="1.7.5"/>
+				<caller organisation="com.typesafe.slick" name="slick_2.11" conf="default, compile, runtime, master" rev="1.6.4" rev-constraint-default="1.6.4" rev-constraint-dynamic="1.6.4" callerrev="2.1.0"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="net.java.dev.jna" name="jna-platform">
+			<revision name="4.1.0" status="release" pubdate="20140306212822" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/twall/jna" downloaded="false" searched="false" default="false" conf="compile, runtime, compile(*), runtime(*), master(compile), master" position="9">
+				<license name="LGPL, version 2.1" url="http://www.gnu.org/licenses/licenses.html"/>
+				<license name="ASL, version 2" url="http://www.apache.org/licenses/"/>
+				<metadata-artifact status="no" details="" size="2606" time="0" location="/home/knoldus/.ivy2/cache/net.java.dev.jna/jna-platform/ivy-4.1.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/net/java/dev/jna/jna-platform/4.1.0/jna-platform-4.1.0.pom"/>
+				<caller organisation="com.github.dblock.waffle" name="waffle-jna" conf="compile, runtime" rev="4.1.0" rev-constraint-default="4.1.0" rev-constraint-dynamic="4.1.0" callerrev="1.7"/>
+				<artifacts>
+					<artifact name="jna-platform" type="jar" ext="jar" status="no" details="" size="1464423" time="0" location="/home/knoldus/.ivy2/cache/net.java.dev.jna/jna-platform/jars/jna-platform-4.1.0.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/net/java/dev/jna/jna-platform/4.1.0/jna-platform-4.1.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="net.java.dev.jna" name="jna">
+			<revision name="4.1.0" status="release" pubdate="20140306212605" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/twall/jna" downloaded="false" searched="false" default="false" conf="compile, runtime, compile(*), runtime(*), master(compile), master" position="8">
+				<license name="LGPL, version 2.1" url="http://www.gnu.org/licenses/licenses.html"/>
+				<license name="ASL, version 2" url="http://www.apache.org/licenses/"/>
+				<metadata-artifact status="no" details="" size="2408" time="0" location="/home/knoldus/.ivy2/cache/net.java.dev.jna/jna/ivy-4.1.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/net/java/dev/jna/jna/4.1.0/jna-4.1.0.pom"/>
+				<caller organisation="com.github.dblock.waffle" name="waffle-jna" conf="compile, runtime" rev="4.1.0" rev-constraint-default="4.1.0" rev-constraint-dynamic="4.1.0" callerrev="1.7"/>
+				<caller organisation="net.java.dev.jna" name="jna-platform" conf="compile, runtime" rev="4.1.0" rev-constraint-default="4.1.0" rev-constraint-dynamic="4.1.0" callerrev="4.1.0"/>
+				<artifacts>
+					<artifact name="jna" type="jar" ext="jar" status="no" details="" size="914597" time="0" location="/home/knoldus/.ivy2/cache/net.java.dev.jna/jna/jars/jna-4.1.0.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/net/java/dev/jna/jna/4.1.0/jna-4.1.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.typesafe.slick" name="slick_2.11">
+			<revision name="2.1.0" status="release" pubdate="20140804132149" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://slick.typesafe.com" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="5">
+				<license name="Two-clause BSD-style license" url="http://github.com/slick/slick/blob/master/LICENSE.txt"/>
+				<metadata-artifact status="no" details="" size="2978" time="0" location="/home/knoldus/.ivy2/cache/com.typesafe.slick/slick_2.11/ivy-2.1.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/slick/slick_2.11/2.1.0/slick_2.11-2.1.0.pom"/>
+				<caller organisation="default" name="slickapp_2.11" conf="compile, runtime" rev="2.1.0" rev-constraint-default="2.1.0" rev-constraint-dynamic="2.1.0" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="slick_2.11" type="bundle" ext="jar" status="no" details="" size="3739462" time="0" location="/home/knoldus/.ivy2/cache/com.typesafe.slick/slick_2.11/bundles/slick_2.11-2.1.0.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/slick/slick_2.11/2.1.0/slick_2.11-2.1.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="ch.qos.logback" name="logback-classic">
+			<revision name="1.0.13" status="release" pubdate="20130510180446" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://logback.qos.ch" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="3">
+				<license name="Eclipse Public License - v 1.0" url="http://www.eclipse.org/legal/epl-v10.html"/>
+				<license name="GNU Lesser General Public License" url="http://www.gnu.org/licenses/old-licenses/lgpl-2.1.html"/>
+				<metadata-artifact status="no" details="" size="10481" time="0" location="/home/knoldus/.ivy2/cache/ch.qos.logback/logback-classic/ivy-1.0.13.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/ch/qos/logback/logback-classic/1.0.13/logback-classic-1.0.13.pom"/>
+				<caller organisation="default" name="slickapp_2.11" conf="compile, runtime" rev="1.0.13" rev-constraint-default="1.0.13" rev-constraint-dynamic="1.0.13" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="logback-classic" type="jar" ext="jar" status="no" details="" size="264600" time="0" location="/home/knoldus/.ivy2/cache/ch.qos.logback/logback-classic/jars/logback-classic-1.0.13.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/ch/qos/logback/logback-classic/1.0.13/logback-classic-1.0.13.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="ch.qos.logback" name="logback-core">
+			<revision name="1.0.13" status="release" pubdate="20130510180314" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://logback.qos.ch" downloaded="false" searched="false" default="false" conf="compile, runtime, compile(*), runtime(*), master(compile), master" position="4">
+				<license name="Eclipse Public License - v 1.0" url="http://www.eclipse.org/legal/epl-v10.html"/>
+				<license name="GNU Lesser General Public License" url="http://www.gnu.org/licenses/old-licenses/lgpl-2.1.html"/>
+				<metadata-artifact status="no" details="" size="9571" time="0" location="/home/knoldus/.ivy2/cache/ch.qos.logback/logback-core/ivy-1.0.13.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/ch/qos/logback/logback-core/1.0.13/logback-core-1.0.13.pom"/>
+				<caller organisation="ch.qos.logback" name="logback-classic" conf="default, compile, runtime, master" rev="1.0.13" rev-constraint-default="1.0.13" rev-constraint-dynamic="1.0.13" callerrev="1.0.13"/>
+				<artifacts>
+					<artifact name="logback-core" type="jar" ext="jar" status="no" details="" size="418870" time="0" location="/home/knoldus/.ivy2/cache/ch.qos.logback/logback-core/jars/logback-core-1.0.13.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/ch/qos/logback/logback-core/1.0.13/logback-core-1.0.13.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.typesafe" name="config">
+			<revision name="1.2.1" status="release" pubdate="20140502202416" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/typesafehub/config" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, compile(*), runtime, runtime(*), master(compile), master" position="2">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="no" details="" size="2752" time="0" location="/home/knoldus/.ivy2/cache/com.typesafe/config/ivy-1.2.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/config/1.2.1/config-1.2.1.pom"/>
+				<caller organisation="com.typesafe.slick" name="slick_2.11" conf="default, compile, runtime, master" rev="1.2.1" rev-constraint-default="1.2.1" rev-constraint-dynamic="1.2.1" callerrev="2.1.0"/>
+				<caller organisation="default" name="slickapp_2.11" conf="compile, runtime" rev="1.2.1" rev-constraint-default="1.2.1" rev-constraint-dynamic="1.2.1" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="config" type="bundle" ext="jar" status="no" details="" size="219554" time="0" location="/home/knoldus/.ivy2/cache/com.typesafe/config/bundles/config-1.2.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/config/1.2.1/config-1.2.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="mysql" name="mysql-connector-java">
+			<revision name="5.1.21" status="release" pubdate="20120621191202" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://dev.mysql.com/usingmysql/java/" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="1">
+				<license name="The GNU General Public License, Version 2" url="http://www.gnu.org/licenses/gpl.txt"/>
+				<metadata-artifact status="no" details="" size="2387" time="0" location="/home/knoldus/.ivy2/cache/mysql/mysql-connector-java/ivy-5.1.21.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/mysql/mysql-connector-java/5.1.21/mysql-connector-java-5.1.21.pom"/>
+				<caller organisation="default" name="slickapp_2.11" conf="compile, runtime" rev="5.1.21" rev-constraint-default="5.1.21" rev-constraint-dynamic="5.1.21" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="mysql-connector-java" type="jar" ext="jar" status="no" details="" size="827942" time="0" location="/home/knoldus/.ivy2/cache/mysql/mysql-connector-java/jars/mysql-connector-java-5.1.21.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/mysql/mysql-connector-java/5.1.21/mysql-connector-java-5.1.21.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-lang" name="scala-library">
+			<revision name="2.11.4" status="release" pubdate="20141023210451" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" extra-info.apiURL="http://www.scala-lang.org/api/2.11.4/" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master, compile(*), runtime(*), master(compile)" position="0">
+				<license name="BSD 3-Clause" url="http://www.scala-lang.org/license.html"/>
+				<metadata-artifact status="no" details="" size="2653" time="0" location="/home/knoldus/.ivy2/cache/org.scala-lang/scala-library/ivy-2.11.4.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.11.4/scala-library-2.11.4.pom"/>
+				<caller organisation="com.typesafe.slick" name="slick_2.11" conf="default, compile, runtime, master" rev="2.11.1" rev-constraint-default="2.11.1" rev-constraint-dynamic="2.11.1" callerrev="2.1.0"/>
+				<caller organisation="default" name="slickapp_2.11" conf="compile, runtime" rev="2.11.4" rev-constraint-default="2.11.4" rev-constraint-dynamic="2.11.4" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="scala-library" type="jar" ext="jar" status="no" details="" size="5536783" time="0" location="/home/knoldus/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.4.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.11.4/scala-library-2.11.4.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+			<revision name="2.11.1" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="compile, runtime, compile(*), runtime(*), master(compile), master" position="-1">
+				<evicted-by rev="2.11.4"/>
+				<caller organisation="com.typesafe.slick" name="slick_2.11" conf="default, compile, runtime, master" rev="2.11.1" rev-constraint-default="2.11.1" rev-constraint-dynamic="2.11.1" callerrev="2.1.0"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+	</dependencies>
+</ivy-report>
